@@ -5,18 +5,23 @@ public class MiniDuckSimulator {
 
     public static void main(String[] args) {
 
-        MallardDuck mallard = new MallardDuck();
-        RubberDuck rubberDuckie = new RubberDuck();
-        RedHeadDuck readHead = new RedHeadDuck();
-        ModelDuck model = new ModelDuck();
+        MallardDuck mallardDuck = new MallardDuck();
+        RubberDuck rubberDuck = new RubberDuck();
+        RedHeadDuck readHeadDuck = new RedHeadDuck();
+        ModelDuck modelDuck = new ModelDuck();
 
-        mallard.display();
-        mallard.fly();
-        rubberDuckie.display();
-        rubberDuckie.fly();
-        readHead.display();
-        readHead.fly();
-        model.display();
-        model.fly();
+        mallardDuck.display();
+        mallardDuck.quack();
+        mallardDuck.fly();
+        rubberDuck.display();
+        rubberDuck.quack();
+        rubberDuck.fly();
+        readHeadDuck.display();
+        readHeadDuck.quack();
+        readHeadDuck.fly();
+        modelDuck.display();
+        modelDuck.quack();
+        //TODO change fly behavior, use FlyWithRocket to fly. 
+        modelDuck.fly();
     }
 }
