@@ -21,7 +21,7 @@ public class MiniDuckSimulator {
         readHeadDuck.fly();
         modelDuck.display();
         modelDuck.quack();
-        //TODO change fly behavior, use FlyWithRocket to fly. 
+        modelDuck.setFlyBehavior(new FlyWithRocket());
         modelDuck.fly();
     }
 }

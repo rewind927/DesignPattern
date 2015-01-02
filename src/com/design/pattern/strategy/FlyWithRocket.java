@@ -1,6 +1,11 @@
 
 package com.design.pattern.strategy;
 
-public class FlyWithRocket {
-    //TODO implement this
+public class FlyWithRocket implements FlyBehavior{
+
+    @Override
+    public void fly() {
+        System.out.println("I'm fly with rocket!!");
+    }
+    
 }
