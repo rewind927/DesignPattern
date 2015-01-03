@@ -10,6 +10,7 @@ public class StarBuzzTestDrive {
 		tea.prepareRecipe();
  
 		System.out.println("\nMaking coffee...");
+		coffee.setCustomerWantsCondiments(false);
 		coffee.prepareRecipe();
 
 	}
