@@ -1,7 +1,7 @@
 
 package com.design.pattern.observer;
 
-public class NesStation {
+public class NewsStation {
     
     public static void main(String[] args) {
         NewsData newsData= new NewsData();
