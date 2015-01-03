@@ -16,7 +16,9 @@ public class DuckTestDrive {
 
         System.out.println("\nThe Duck says...");
         testDuck(duck);
-
+        
+        //TODO using adapter pattern
+        
     }
 
     public static void testDuck(Duck duck) {
