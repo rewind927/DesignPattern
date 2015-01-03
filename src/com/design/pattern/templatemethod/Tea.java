@@ -1,30 +1,15 @@
 
 package com.design.pattern.templatemethod;
 
-public class Tea {
+public class Tea extends CaffeineBeverage {
 
-    //TODO refactor this class
-    
-    public void prepareRecipe() {
-        boilWater();
-        steepTeaBag();
-        pourInCup();
-        addLemon();
-    }
-
-    public void boilWater() {
-        System.out.println("Boiling water");
-    }
-
-    public void steepTeaBag() {
+    @Override
+    void brew() {
         System.out.println("Steeping the tea");
     }
 
-    public void pourInCup() {
-        System.out.println("Pouring into cup");
-    }
-
-    public void addLemon() {
+    @Override
+    void addCondiments() {
         System.out.println("Adding Lemon");
     }
 
