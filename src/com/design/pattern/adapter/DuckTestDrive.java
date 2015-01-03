@@ -9,6 +9,7 @@ public class DuckTestDrive {
 
         MallardDuck duck = new MallardDuck();
         WildTurkey turkey = new WildTurkey();
+        Duck fakeDuck = new TurckyAdapter(turkey); 
 
         System.out.println("The Turkey says...");
         turkey.gobble();
@@ -17,7 +18,8 @@ public class DuckTestDrive {
         System.out.println("\nThe Duck says...");
         testDuck(duck);
         
-        //TODO using adapter pattern
+        System.out.println("\nThe fake Duck says...");
+        testDuck(fakeDuck);
         
     }
 

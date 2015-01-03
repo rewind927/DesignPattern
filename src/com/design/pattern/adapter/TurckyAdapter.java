@@ -1,17 +1,24 @@
+
 package com.design.pattern.adapter;
 
-public class TurckyAdapter implements Duck{
+public class TurckyAdapter implements Duck {
+
+    private Turkey turkey;
+
+    public TurckyAdapter(Turkey turkey) {
+        this.turkey = turkey;
+    }
 
     @Override
     public void quack() {
-        // TODO implement
-        
+        turkey.gobble();
     }
 
     @Override
     public void fly() {
-        // TODO implement
-        
+        for (int i = 0; i < 5; i++) {
+            turkey.fly();
+        }
     }
 
 }
