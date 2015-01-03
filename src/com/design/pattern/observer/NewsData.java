@@ -2,6 +2,7 @@
 package com.design.pattern.observer;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class NewsData implements Subject {
     private String headlineNews;
@@ -9,7 +10,7 @@ public class NewsData implements Subject {
     private String financeNews;
     private String entertainmentNews;
 
-    private ArrayList obserArrayList;
+    private List obserArrayList;
 
     public NewsData() {
         obserArrayList = new ArrayList();
@@ -17,17 +18,21 @@ public class NewsData implements Subject {
 
     @Override
     public void registerObserver(Observer object) {
-        //TODO implements this function. 
+        obserArrayList.add(object);
     }
 
     @Override
     public void removeObserver(Observer object) {
-        //TODO implements this function. 
+        if (obserArrayList.contains(object)) {
+            obserArrayList.remove(object);
+        }
     }
 
     @Override
     public void notifyObservers() {
-        //TODO implements this function. 
+        for (int i = 0; i < obserArrayList.size(); i++) {
+            ((Observer) obserArrayList.get(i)).update(headlineNews, sportsNews, financeNews, entertainmentNews);
+        }
     }
 
     public void updateNews() {
