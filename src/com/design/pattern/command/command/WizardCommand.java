@@ -7,11 +7,11 @@ public class WizardCommand implements Command {
 	private Wizard wizard;
 
 	public WizardCommand(Wizard wizard) {
-	    //TODO implement this constructor 
+		this.wizard = wizard;
 	}
 
 	@Override
 	public void attack() {
-	    //TODO invoke wizard attack function
+		wizard.spell();
 	}
 }

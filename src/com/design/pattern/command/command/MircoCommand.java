@@ -1,15 +1,18 @@
 package com.design.pattern.command.command;
 
+import java.util.List;
 
 public class MircoCommand implements Command{
-    //TODO add more than two command and invoke attack function.
+    private List<Command> commands;
 
-    public MircoCommand() {
-        //TODO need to init.
+    public MircoCommand(List commands) {
+        this.commands = commands;
     }
 
     @Override
     public void attack() {
-        //TODO need to invoke attack function from commands.
+        for (int i = 0; i < commands.size(); i++) {
+            commands.get(i).attack();
+        }
     }
 }

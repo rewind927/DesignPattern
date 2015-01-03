@@ -10,10 +10,14 @@ import com.design.pattern.command.command.BaseballPlayerCommand;
 import com.design.pattern.command.command.Command;
 import com.design.pattern.command.command.GoblinCommand;
 import com.design.pattern.command.command.KnightCommand;
+import com.design.pattern.command.command.MircoCommand;
 import com.design.pattern.command.command.SonGokuCommand;
 import com.design.pattern.command.command.WarriorCommand;
 import com.design.pattern.command.command.WizardCommand;
 import com.design.pattern.command.remotecontrol.SimpleRemoteControl;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FightMain {
 
@@ -28,14 +32,16 @@ public class FightMain {
         SonGoku sonGoku = new SonGoku();
 
         Command knightCommand = new KnightCommand(knight);
-        //TODO implement WizardCommand
         Command wizardCommand = new WizardCommand(wizard);
         Command warriorCommand = new WarriorCommand(warrior);
         Command goblinCommand = new GoblinCommand(goblin);
         Command baseballPlayerCommand = new BaseballPlayerCommand(baseballPlayer);
         Command sonGoKuCommand = new SonGokuCommand(sonGoku);
         
-        //TODO implement and execute mircoCommand
+        List<Command> commandList= new ArrayList<Command>();
+        commandList.add(sonGoKuCommand);
+        commandList.add(baseballPlayerCommand);
+        Command mircoCommand = new MircoCommand(commandList);
 
         remoteControl.addCommand(knightCommand);
         remoteControl.addCommand(wizardCommand);
@@ -43,6 +49,7 @@ public class FightMain {
         remoteControl.addCommand(goblinCommand);
         remoteControl.addCommand(baseballPlayerCommand);
         remoteControl.addCommand(sonGoKuCommand);
+        remoteControl.addCommand(mircoCommand);
 
         System.out.println(remoteControl);
 
