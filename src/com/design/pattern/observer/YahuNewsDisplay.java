@@ -1,11 +1,12 @@
 
 package com.design.pattern.observer;
 
-public class YahuNewsDisplay {
+public class YahuNewsDisplay implements Observer {
     private String headlineNews;
     private String sportsNews;
 
-    public void update(String headlineNews, String sportsNews, String financeNews,String entertainmentNews) {
+    @Override
+    public void update(String headlineNews, String sportsNews, String financeNews, String entertainmentNews) {
         this.headlineNews = headlineNews;
         this.sportsNews = sportsNews;
         display();

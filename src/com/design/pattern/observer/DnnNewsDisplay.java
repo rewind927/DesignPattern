@@ -1,12 +1,13 @@
 
 package com.design.pattern.observer;
 
-public class DnnNewsDisplay {
+public class DnnNewsDisplay implements Observer {
     private String headlineNews;
     private String sportsNews;
     private String financeNews;
 
-    public void update(String headlineNews, String sportsNews, String financeNews,String entertainmentNews) {
+    @Override
+    public void update(String headlineNews, String sportsNews, String financeNews, String entertainmentNews) {
         this.headlineNews = headlineNews;
         this.sportsNews = sportsNews;
         this.financeNews = financeNews;

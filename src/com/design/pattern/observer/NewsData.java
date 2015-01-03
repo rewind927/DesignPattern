@@ -1,22 +1,37 @@
 
 package com.design.pattern.observer;
 
-public class NewsData {
+import java.util.ArrayList;
+
+public class NewsData implements Subject {
     private String headlineNews;
     private String sportsNews;
     private String financeNews;
     private String entertainmentNews;
 
-    private YahuNewsDisplay yahuNewsDisplay;
-    private DnnNewsDisplay dnnNewsDisplay;
-    private CccNewsDisplay cccNewsDisplay;
-    private GuavaDaliyNewsDisplay guavaDaliyNewsDisplay;
+    private ArrayList obserArrayList;
+
+    public NewsData() {
+        obserArrayList = new ArrayList();
+    }
+
+    @Override
+    public void registerObserver(Observer object) {
+        //TODO implements this function. 
+    }
+
+    @Override
+    public void removeObserver(Observer object) {
+        //TODO implements this function. 
+    }
+
+    @Override
+    public void notifyObservers() {
+        //TODO implements this function. 
+    }
 
     public void updateNews() {
-        yahuNewsDisplay.update(headlineNews, sportsNews, financeNews, entertainmentNews);
-        dnnNewsDisplay.update(headlineNews, sportsNews, financeNews, entertainmentNews);
-        cccNewsDisplay.update(headlineNews, sportsNews, financeNews, entertainmentNews);
-        guavaDaliyNewsDisplay.update(headlineNews, sportsNews, financeNews, entertainmentNews);
+        notifyObservers();
     }
 
     public String getHeadlineNews() {
@@ -49,21 +64,5 @@ public class NewsData {
 
     public String getEntertainmentNews() {
         return entertainmentNews;
-    }
-
-    public void setYahuNewsDisplay(YahuNewsDisplay yahuNewsDisplay) {
-        this.yahuNewsDisplay = yahuNewsDisplay;
-    }
-
-    public void setDnnNewsDisplay(DnnNewsDisplay dnnNewsDisplay) {
-        this.dnnNewsDisplay = dnnNewsDisplay;
-    }
-
-    public void setCccNewsDisplay(CccNewsDisplay cccNewsDisplay) {
-        this.cccNewsDisplay = cccNewsDisplay;
-    }
-
-    public void setGuavaDaliyNewsDisplay(GuavaDaliyNewsDisplay guavaDaliyNewsDisplay) {
-        this.guavaDaliyNewsDisplay = guavaDaliyNewsDisplay;
     }
 }
