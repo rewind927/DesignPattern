@@ -4,12 +4,12 @@ package com.design.pattern.templatemethod;
 public class Tea extends CaffeineBeverage {
 
     @Override
-    void brew() {
+    protected void brew() {
         System.out.println("Steeping the tea");
     }
 
     @Override
-    void addCondiments() {
+    protected void addCondiments() {
         System.out.println("Adding Lemon");
     }
 
