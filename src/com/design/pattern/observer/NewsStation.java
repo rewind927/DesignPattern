@@ -10,10 +10,7 @@ public class NewsStation {
         GuavaDaliyNewsDisplay guavaDaliyNewsDisplay = new GuavaDaliyNewsDisplay();
         YahuNewsDisplay yahuNewsDisplay = new YahuNewsDisplay();
         
-        newsData.setCccNewsDisplay(cccNewsDisplay);
-        newsData.setDnnNewsDisplay(dnnNewsDisplay);
-        newsData.setGuavaDaliyNewsDisplay(guavaDaliyNewsDisplay);
-        newsData.setYahuNewsDisplay(yahuNewsDisplay);
+        //TODO register display objects to newsData
         
         newsData.setHeadlineNews("'Big objects found' in AirAsia hunt");
         newsData.setFinanceNews("US shares barely budge in 2015");
