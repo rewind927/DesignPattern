@@ -8,6 +8,7 @@ public abstract class Duck {
 
     public abstract void display();
 
+    //TODO refactor swin function
     public void swin() {
         System.out.println("swin");
     }
