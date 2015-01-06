@@ -12,4 +12,11 @@ public class ModelDuck extends Duck {
     public void fly() {
         System.out.println("I can't fly");
     }
+
+    @Override
+    public void quack() {
+        System.out.println("silence");
+    }
+    
+    
 }
