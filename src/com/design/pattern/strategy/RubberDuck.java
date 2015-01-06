@@ -17,5 +17,9 @@ public class RubberDuck extends Duck {
     public void fly() {
         System.out.println("I can't fly");
     }
-    
+
+    @Override
+    public void swin() {
+        System.out.println("float");
+    }
 }

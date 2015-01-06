@@ -17,6 +17,9 @@ public class ModelDuck extends Duck {
     public void quack() {
         System.out.println("silence");
     }
-    
-    
+
+    @Override
+    public void swin() {
+        System.out.println("swin with turbine engine");
+    }
 }
