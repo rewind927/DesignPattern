@@ -9,10 +9,10 @@ public class NewsData implements Subject {
     private String financeNews;
     private String entertainmentNews;
 
-    private ArrayList obserArrayList;
+    private ArrayList observerArrayList;
 
     public NewsData() {
-        obserArrayList = new ArrayList();
+        observerArrayList = new ArrayList();
     }
 
     @Override
