@@ -10,28 +10,28 @@ public class NewsData implements Subject {
     private String financeNews;
     private String entertainmentNews;
 
-    private List obserArrayList;
+    private List observerArrayList;
 
     public NewsData() {
-        obserArrayList = new ArrayList();
+        observerArrayList = new ArrayList();
     }
 
     @Override
     public void registerObserver(Observer object) {
-        obserArrayList.add(object);
+        observerArrayList.add(object);
     }
 
     @Override
     public void removeObserver(Observer object) {
-        if (obserArrayList.contains(object)) {
-            obserArrayList.remove(object);
+        if (observerArrayList.contains(object)) {
+            observerArrayList.remove(object);
         }
     }
 
     @Override
     public void notifyObservers() {
-        for (int i = 0; i < obserArrayList.size(); i++) {
-            ((Observer) obserArrayList.get(i)).update(headlineNews, sportsNews, financeNews, entertainmentNews);
+        for (int i = 0; i < observerArrayList.size(); i++) {
+            ((Observer) observerArrayList.get(i)).update(headlineNews, sportsNews, financeNews, entertainmentNews);
         }
     }
 
