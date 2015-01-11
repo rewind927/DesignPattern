@@ -8,7 +8,7 @@ public class Sandwitch extends Burger{
 
     @Override
     public float cost() {
-        return 0.99f;
+        return 0.9f;
     }
 
 }
