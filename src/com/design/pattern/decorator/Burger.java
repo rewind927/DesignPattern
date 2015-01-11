@@ -9,9 +9,8 @@ public abstract class Burger {
     private boolean hasLettuce;
     
     public abstract String getDescription();
-    public float cost(){
-        return 1.00f;
-    };
+    public abstract float cost();
+    
     public boolean isHasChesse() {
         return hasChesse;
     }
