@@ -5,8 +5,7 @@ public class BurgerQueen {
     public static void main(String[] args) {
         
         Burger submarineSandwich = new SubmarineSandwich();
-        //TODO add cheese decorator 
-        //submarineSandwich = new Cheese(submarineSandwich);
+        submarineSandwich = new Cheese(submarineSandwich);
         submarineSandwich = new Beef(submarineSandwich);
         System.out.println(submarineSandwich.getDescription());
         System.out.println(submarineSandwich.cost()+"\n");
@@ -18,8 +17,8 @@ public class BurgerQueen {
         System.out.println(sandwitch.cost()+"\n");
         
         Burger whopper = new Whopper();
-        //whopper = new Cheese(whopper);
-        //whopper = new Cheese(whopper)
+        whopper = new Cheese(whopper);
+        whopper = new Cheese(whopper);
         System.out.println(whopper.getDescription());
         System.out.println(whopper.cost()+"\n");
     }
