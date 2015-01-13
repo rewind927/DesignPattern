@@ -1,7 +1,4 @@
 # DesignPattern
-Study Design Pattern
-
-Welcome to the DesignPattern wiki!
 
 ### Purpose:
 希望大家能夠透過實際動手寫幾個小例子,來了解 design pattern 的精神,並且透過讀書會的方式多多交流對 design pattern 的想法
