@@ -1,6 +1,6 @@
 package com.design.pattern.singleton;
 
-public class Contry {
+public class Country {
     public static void main(String[] args) {
         Government government = new Government();
         government.setOfficer(100);
