@@ -1,13 +1,13 @@
 package com.design.pattern.singleton;
 
-public class Contry {
+public class Country {
     public static void main(String[] args) {
-        Government government = new Government();
+        Government government = Government.getInstance();
         government.setOfficer(100);
         System.out.println("government has "+government.getOfficer()+" officers. \n");
 
 
-        government = new Government();
+        government = Government.getInstance();
         System.out.println("government has "+government.getOfficer()+" officers.");
     }
 }
