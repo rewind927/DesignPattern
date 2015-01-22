@@ -12,10 +12,15 @@
 如果覺得對自己的實力有信心,不妨試著從這個 branch 開始進行重構
 
 ### Preparation:
-#### IDE
+#### 1.IDE 
 兩者擇一,建議使用 IntelliJ
 * [IntelliJ](https://www.jetbrains.com/idea/)
 * [Eclipse](https://eclipse.org/downloads/)
+
+#### 2.Clone this repository
+<pre><code>git clone git@github.com:rewind927/DesignPattern.git</pre></code>
+#### 3.Import this project
+* [How to import this project by IntelliJ](https://github.com/rewind927/DesignPattern/wiki/How-to-import-this-project-by-IntelliJ)
 
 ### Book List:
 * [Design Patterns](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
