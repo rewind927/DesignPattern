@@ -8,9 +8,9 @@ public abstract class Duck {
 
     public abstract void display();
 
-    //TODO refactor swin function
-    public void swin() {
-        System.out.println("swin");
+    //TODO refactor swim function
+    public void swim() {
+        System.out.println("swim");
     }
 
     public void quack() {
