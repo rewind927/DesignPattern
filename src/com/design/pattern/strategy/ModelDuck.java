@@ -19,7 +19,7 @@ public class ModelDuck extends Duck {
     }
 
     @Override
-    public void swin() {
-        System.out.println("swin with turbine engine");
+    public void swim() {
+        System.out.println("swim with turbine engine");
     }
 }
