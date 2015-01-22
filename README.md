@@ -13,8 +13,9 @@
 
 ### Preparation:
 #### IDE
-* [Eclipse](https://eclipse.org/downloads/)
+兩者擇一,建議使用 IntelliJ
 * [IntelliJ](https://www.jetbrains.com/idea/)
+* [Eclipse](https://eclipse.org/downloads/)
 
 ### Book List:
 * [Design Patterns](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
