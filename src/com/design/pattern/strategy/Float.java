@@ -1,9 +1,9 @@
 package com.design.pattern.strategy;
 
-public class Float implements SwinBehavior{
+public class Float implements SwimBehavior {
 
     @Override
-    public void swin() {
+    public void swim() {
         System.out.println("float");
     }
 }

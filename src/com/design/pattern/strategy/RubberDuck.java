@@ -6,7 +6,7 @@ public class RubberDuck extends Duck {
     public RubberDuck() {
         flyBehavior = new FlyWithWings();
         quackBehavior = new Squeak();
-        swinBehavior = new Float();
+        swimBehavior = new Float();
     }
 
     @Override

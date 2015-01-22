@@ -7,7 +7,7 @@ public abstract class Duck {
 
     protected FlyBehavior flyBehavior;
     protected QuackBehavior quackBehavior;
-    protected SwinBehavior swinBehavior;
+    protected SwimBehavior swimBehavior;
 
     public void setFlyBehavior (FlyBehavior fb) {
         flyBehavior = fb;
@@ -17,14 +17,14 @@ public abstract class Duck {
         quackBehavior = qb;
     }
     
-    public void setSwinBehavior(SwinBehavior sb) {
-        swinBehavior = sb;
+    public void setSwimBehavior(SwimBehavior sb) {
+        swimBehavior = sb;
     }
     
     public abstract void display();
 
     public void swin() {
-        swinBehavior.swin();
+        swimBehavior.swim();
     }
 
     public void quack() {
