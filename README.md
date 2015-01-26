@@ -51,6 +51,7 @@
 *  Iterator
 *  Mediator
 *  Memento
+*  State
 *  [Observer](https://github.com/rewind927/DesignPattern/wiki/Observer)
 *  [Strategy](https://github.com/rewind927/DesignPattern/wiki/Strategy)
 *  [Template method](https://github.com/rewind927/DesignPattern/wiki/Template-method)
