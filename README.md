@@ -56,3 +56,5 @@
 *  [Template method](https://github.com/rewind927/DesignPattern/wiki/Template-method)
 *  Visitor
 
+### Reference:
+1. [Head First Design Patterns](http://www.headfirstlabs.com/books/hfdp/)
