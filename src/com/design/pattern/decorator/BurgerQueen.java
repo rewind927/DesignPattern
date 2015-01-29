@@ -11,11 +11,11 @@ public class BurgerQueen {
         System.out.println(submarineSandwich.getDescription());
         System.out.println(submarineSandwich.cost()+"\n");
         
-        Burger sandwitch = new Sandwitch();
-        sandwitch = new Lettuce(sandwitch);
-        sandwitch = new Chicken(sandwitch);
-        System.out.println(sandwitch.getDescription());
-        System.out.println(sandwitch.cost()+"\n");
+        Burger sandwich = new Sandwich();
+        sandwich = new Lettuce(sandwich);
+        sandwich = new Chicken(sandwich);
+        System.out.println(sandwich.getDescription());
+        System.out.println(sandwich.cost() + "\n");
         
         Burger whopper = new Whopper();
         //whopper = new Cheese(whopper);
