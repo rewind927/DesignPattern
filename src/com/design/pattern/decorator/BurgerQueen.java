@@ -19,7 +19,9 @@ public class BurgerQueen {
         
         Burger whopper = new Whopper();
         //whopper = new Cheese(whopper);
-        //whopper = new Cheese(whopper)
+        //whopper = new Cheese(whopper);
+        //TODO add bacon decorator
+        //whopper = new Bacon(whopper);
         System.out.println(whopper.getDescription());
         System.out.println(whopper.cost()+"\n");
     }

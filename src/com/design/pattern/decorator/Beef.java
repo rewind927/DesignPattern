@@ -10,7 +10,7 @@ public class Beef extends CondimentDecorator{
 
     @Override
     public String getDescription() {
-        return burger.getDescription() + ", Bacon";
+        return burger.getDescription() + ", Beef";
     }
 
     @Override
