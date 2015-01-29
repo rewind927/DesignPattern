@@ -8,9 +8,9 @@ public class BurgerQueen {
         System.out.println(submarineSandwich.getDescription());
         System.out.println(submarineSandwich.cost()+"\n");
         
-        Burger sandwitch = new Sandwitch();
-        System.out.println(sandwitch.getDescription());
-        System.out.println(sandwitch.cost()+"\n");
+        Burger sandwich = new Sandwich();
+        System.out.println(sandwich.getDescription());
+        System.out.println(sandwich.cost()+"\n");
         
         Burger whopper = new Whopper();
         System.out.println(whopper.getDescription());
