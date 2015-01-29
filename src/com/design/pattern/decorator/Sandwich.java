@@ -3,7 +3,7 @@ package com.design.pattern.decorator;
 public class Sandwich extends Burger{
     
     public String getDescription() {
-        return "sandwitch";
+        return "sandwich";
     }
 
     @Override
