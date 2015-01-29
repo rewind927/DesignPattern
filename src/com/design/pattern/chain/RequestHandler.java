@@ -1,9 +1,15 @@
 package com.design.pattern.chain;
 
-public class OrcSoldier {
-    //TODO refactor this class. You can refer to OrcCommander class.
+public abstract class RequestHandler {
+
+    public RequestHandler next;
+
+    public RequestHandler(RequestHandler next) {
+        this.next = next;
+    }
+
     public void handleRequest(Request request) {
-        printHandling(request);
+        //TODO pass request to next handler.
     }
 
     protected void printHandling(Request request) {
@@ -11,7 +17,6 @@ public class OrcSoldier {
     }
 
     @Override
-    public String toString() {
-        return getClass().getSimpleName();
-    }
+    public abstract String toString();
+
 }

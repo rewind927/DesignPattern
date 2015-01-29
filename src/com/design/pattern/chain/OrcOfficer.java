@@ -1,6 +1,7 @@
 package com.design.pattern.chain;
 
 public class OrcOfficer {
+    //TODO refactor this class. You can refer to OrcCommander class.
     public void handleRequest(Request request) {
         printHandling(request);
     }

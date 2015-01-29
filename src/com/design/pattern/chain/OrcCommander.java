@@ -1,12 +1,18 @@
 package com.design.pattern.chain;
 
-public class OrcCommander {
-    public void handleRequest(Request request) {
-        printHandling(request);
+public class OrcCommander extends RequestHandler {
+
+    public OrcCommander(RequestHandler next) {
+        super(next);
     }
 
-    protected void printHandling(Request request) {
-        System.out.println(this + " handling request \"" + request + "\"");
+    @Override
+    public void handleRequest(Request request) {
+        if (request.getRequestType() == RequestType.TRAIN_SOLDIER) {
+            printHandling(request);
+        } else {
+            super.handleRequest(request);
+        }
     }
 
     @Override
