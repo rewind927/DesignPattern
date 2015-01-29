@@ -9,7 +9,9 @@ public abstract class RequestHandler {
     }
 
     public void handleRequest(Request request) {
-        //TODO pass request to next handler.
+        if (next != null) {
+            next.handleRequest(request);
+        }
     }
 
     protected void printHandling(Request request) {

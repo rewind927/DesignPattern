@@ -1,13 +1,18 @@
 package com.design.pattern.chain;
 
-public class OrcOfficer {
-    //TODO refactor this class. You can refer to OrcCommander class.
-    public void handleRequest(Request request) {
-        printHandling(request);
+public class OrcOfficer extends RequestHandler {
+
+    public OrcOfficer(RequestHandler next) {
+        super(next);
     }
 
-    protected void printHandling(Request request) {
-        System.out.println(this + " handling request \"" + request + "\"");
+    @Override
+    public void handleRequest(Request request) {
+        if (request.getRequestType() == RequestType.COLLECT_TAX) {
+            printHandling(request);
+        } else {
+            super.handleRequest(request);
+        }
     }
 
     @Override
