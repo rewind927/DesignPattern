@@ -1,6 +1,6 @@
 package com.design.pattern.decorator;
 
-public class Whopper extends Burger{
+public class Whopper extends Burger {
 
     public String getDescription() {
         return "whopper";

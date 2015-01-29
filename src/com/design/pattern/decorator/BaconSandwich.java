@@ -1,15 +1,13 @@
 package com.design.pattern.decorator;
 
-public class SubmarineSandwich extends Burger {
-
+public class BaconSandwich extends Sandwich {
     @Override
     public String getDescription() {
-        return "submarine sandwich";
+        return super.getDescription() + ", Bacon";
     }
 
     @Override
     public float cost() {
-        return 1.10f;
+        return super.cost() + 1.9f;
     }
-
 }
