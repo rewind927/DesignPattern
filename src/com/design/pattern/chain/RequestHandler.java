@@ -11,6 +11,8 @@ public abstract class RequestHandler {
     public void handleRequest(Request request) {
         if (next != null) {
             next.handleRequest(request);
+        }else {
+            System.out.println("Oh no,no one can handle it");
         }
     }
 

@@ -12,5 +12,8 @@ public class OrcNationMain {
 
         Request trainSoldierRequest = new Request(RequestType.TRAIN_SOLDIER, "train soldier");
         orcKing.makeRequest(trainSoldierRequest);
+
+        Request buildHouseRequest = new Request(RequestType.BUILD_HOUSE, "build house");
+        orcKing.makeRequest(buildHouseRequest);
     }
 }
