@@ -4,7 +4,7 @@ public class SubmarineSandwich extends Burger{
 
     @Override
     public String getDescription() {
-        return "submarine sandwch";
+        return "submarine sandwich";
     }
 
     @Override
