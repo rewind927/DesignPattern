@@ -11,7 +11,7 @@ public class Employee {
     public Employee(EmployeeType employeeType) {
         this.employeeType = employeeType;
     }
-    
+    //TODO Replace conditional with strategy pattern.
     public int payAmount() {
         switch (getType()) {
             case EmployeeType.ENGINEER:
