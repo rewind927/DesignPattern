@@ -1,6 +1,6 @@
 package com.design.pattern.adapter;
 
-public class TurckyAdapter implements Duck{
+public class TurkeyAdapter implements Duck{
 
     @Override
     public void quack() {
