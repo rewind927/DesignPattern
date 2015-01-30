@@ -9,7 +9,7 @@ public class DuckTestDrive {
 
         MallardDuck duck = new MallardDuck();
         WildTurkey turkey = new WildTurkey();
-        Duck fakeDuck = new TurckyAdapter(turkey); 
+        Duck fakeDuck = new TurkeyAdapter(turkey);
 
         System.out.println("The Turkey says...");
         turkey.gobble();

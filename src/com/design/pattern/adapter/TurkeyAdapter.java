@@ -1,11 +1,11 @@
 
 package com.design.pattern.adapter;
 
-public class TurckyAdapter implements Duck {
+public class TurkeyAdapter implements Duck {
 
     private Turkey turkey;
 
-    public TurckyAdapter(Turkey turkey) {
+    public TurkeyAdapter(Turkey turkey) {
         this.turkey = turkey;
     }
 
