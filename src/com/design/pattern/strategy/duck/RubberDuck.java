@@ -1,5 +1,7 @@
 
-package com.design.pattern.strategy;
+package com.design.pattern.strategy.duck;
+
+import java.lang.*;
 
 public class RubberDuck extends Duck {
     

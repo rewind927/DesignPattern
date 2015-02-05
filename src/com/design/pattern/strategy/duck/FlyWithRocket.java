@@ -1,5 +1,5 @@
 
-package com.design.pattern.strategy;
+package com.design.pattern.strategy.duck;
 
 public class FlyWithRocket implements FlyBehavior{
 
