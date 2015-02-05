@@ -1,12 +1,12 @@
 
-package com.design.pattern.adapter.objectadapter;
+package com.design.pattern.adapter.classadapter;
 
 
 import com.design.pattern.adapter.Duck;
 import com.design.pattern.adapter.MallardDuck;
 import com.design.pattern.adapter.WildTurkey;
 
-public class DuckTestDrive {
+public class DuckTestDriveByClassAdapter {
 
     public static void main(String[] args) {
 
@@ -20,7 +20,7 @@ public class DuckTestDrive {
         System.out.println("\nThe Duck says...");
         testDuck(duck);
         
-        //TODO implement with object adapter.
+        //TODO implement with class adapter.
         
     }
 
