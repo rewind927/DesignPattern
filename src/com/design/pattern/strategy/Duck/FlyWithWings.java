@@ -1,4 +1,4 @@
-package com.design.pattern.strategy.Duck;
+package com.design.pattern.strategy.duck;
 
 public class FlyWithWings implements FlyBehavior{
     
