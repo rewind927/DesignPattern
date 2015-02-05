@@ -1,4 +1,4 @@
-package com.design.pattern.strategy;
+package com.design.pattern.strategy.Duck;
 
 public class FlyNoWay implements FlyBehavior{
 
