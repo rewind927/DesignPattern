@@ -1,26 +1,22 @@
 package com.design.pattern.memento;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Player {
     private PlayerState playerState;
-    private List<PlayerState> saveList;
 
     public Player() {
         playerState = new PlayerState(100, 0, PlayerState.State.IDLE_STATE);
-        saveList = new ArrayList<PlayerState>();
     }
 
-    public void savePlayerStateToSavePoint() {
+    public SavePoint savePlayerStateToSavePoint() {
         System.out.println("====================== savePlayerStateToSavePoint:" + playerState.getTime() + " ======================");
-        saveList.add(playerState);
+        //TODO return SavePoint
+        return null;
     }
 
-    public void loadPlayerStateFromSavePoint(int index) {
-        playerState = saveList.get(index);
-        System.out.println("====================== savePlayerStateToSavePoint:" + playerState.getTime() + " ======================");
+    public void loadPlayerStateFromSavePoint(SavePoint savePoint) {
+        //TODO load from savePoint
+        System.out.println("====================== loadPlayerStateToSavePoint:" + playerState.getTime() + " ======================");
         System.out.println("load complete!");
         showPlayerState();
         System.out.println("================================================================================================");
