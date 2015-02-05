@@ -1,4 +1,4 @@
-package com.design.pattern.strategy.Employee;
+package com.design.pattern.strategy.employee;
 
 public class Merchant extends EmployeeType {
     @Override
