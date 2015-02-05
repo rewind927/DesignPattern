@@ -1,4 +1,4 @@
-package com.design.pattern.strategy.Employee;
+package com.design.pattern.strategy.employee;
 
 public class WorkSpace {
 
