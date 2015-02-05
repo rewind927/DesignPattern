@@ -1,6 +1,10 @@
 
-package com.design.pattern.adapter;
+package com.design.pattern.adapter.classadapter;
 
+
+import com.design.pattern.adapter.Duck;
+import com.design.pattern.adapter.MallardDuck;
+import com.design.pattern.adapter.WildTurkey;
 
 public class DuckTestDrive {
 

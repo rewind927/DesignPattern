@@ -1,11 +1,12 @@
-package com.design.pattern.adapter;
+package com.design.pattern.adapter.classadapter;
 
-public class TurkeyAdapter implements Duck{
+import com.design.pattern.adapter.Duck;
+
+public class TurkeyClassAdapter implements Duck {
 
     @Override
     public void quack() {
         // TODO implement
-        
     }
 
     @Override
