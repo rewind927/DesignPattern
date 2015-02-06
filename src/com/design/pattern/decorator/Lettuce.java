@@ -2,10 +2,8 @@ package com.design.pattern.decorator;
 
 public class Lettuce extends CondimentDecorator{
     
-    private Burger burger;
-    
     public Lettuce(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override
