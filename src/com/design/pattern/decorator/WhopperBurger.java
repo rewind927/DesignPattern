@@ -1,15 +1,13 @@
 package com.design.pattern.decorator;
 
-public class Sandwich implements Burger {
+public class WhopperBurger implements Burger {
 
-	@Override
 	public String getDescription() {
-		return "sandwich";
+		return "whopper";
 	}
 
 	@Override
 	public float cost() {
-		return 0.99f;
+		return 1.0f;
 	}
-
 }

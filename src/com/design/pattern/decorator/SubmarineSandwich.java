@@ -1,6 +1,6 @@
 package com.design.pattern.decorator;
 
-public class SubmarineSandwich extends Burger {
+public class SubmarineSandwich implements Burger {
 
     @Override
     public String getDescription() {

@@ -1,9 +1,7 @@
 package com.design.pattern.decorator;
 
-public abstract class Burger {
-    protected String description;
+public interface Burger {
+	public String getDescription();
 
-    public abstract String getDescription();
-
-    public abstract float cost();
+	public float cost();
 }

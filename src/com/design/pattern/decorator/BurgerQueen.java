@@ -20,7 +20,7 @@ public class BurgerQueen {
         System.out.println(baconSandwich.getDescription());
         System.out.println(baconSandwich.cost() + "\n");
 
-        Burger whopper = new Whopper();
+        Burger whopper = new WhopperBurger();
         System.out.println(whopper.getDescription());
         System.out.println(whopper.cost() + "\n");
     }
