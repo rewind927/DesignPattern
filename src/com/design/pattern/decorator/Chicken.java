@@ -1,19 +1,19 @@
 package com.design.pattern.decorator;
 
-public class Chicken extends CondimentDecorator{
-    
-    public Chicken(Burger burger) {
-        super(burger);
-    }
+public class Chicken extends CondimentDecorator {
 
-    @Override
-    public String getDescription() {
-        return burger.getDescription() + ", Chicken";
-    }
+	public Chicken(Burger burger) {
+		super(burger);
+	}
 
-    @Override
-    public float cost() {
-        return burger.cost() + 1.9f;
-    }
+	@Override
+	public String getDescription() {
+		return burger.getDescription() + ", Chicken";
+	}
+
+	@Override
+	public float cost() {
+		return burger.cost() + 1.9f;
+	}
 
 }

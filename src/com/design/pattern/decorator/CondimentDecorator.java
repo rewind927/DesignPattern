@@ -1,13 +1,11 @@
 package com.design.pattern.decorator;
 
-public abstract class CondimentDecorator extends Burger{
+public abstract class CondimentDecorator implements Burger {
 
-    protected Burger burger;
+	protected Burger burger;
 
-    public CondimentDecorator(Burger burger) {
-        this.burger = burger;
-    }
+	public CondimentDecorator(Burger burger) {
+		this.burger = burger;
+	}
 
-    public abstract String getDescription();
-    
 }

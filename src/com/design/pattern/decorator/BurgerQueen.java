@@ -2,26 +2,26 @@ package com.design.pattern.decorator;
 
 public class BurgerQueen {
 
-    public static void main(String[] args) {
-        
-        Burger submarineSandwich = new SubmarineSandwich();
-        submarineSandwich = new Cheese(submarineSandwich);
-        submarineSandwich = new Beef(submarineSandwich);
-        System.out.println(submarineSandwich.getDescription());
-        System.out.println(submarineSandwich.cost()+"\n");
-        
-        Burger sandwich = new Sandwich();
-        sandwich = new Lettuce(sandwich);
-        sandwich = new Chicken(sandwich);
-        System.out.println(sandwich.getDescription());
-        System.out.println(sandwich.cost() + "\n");
-        
-        Burger whopper = new Whopper();
-        whopper = new Cheese(whopper);
-        whopper = new Cheese(whopper);
-        whopper = new Bacon(whopper);
-        System.out.println(whopper.getDescription());
-        System.out.println(whopper.cost()+"\n");
-    }
+	public static void main(String[] args) {
+		// Make a beef marine sandwich.
+		Burger submarineSandwichBeef = new Beef(new SubmarineSandwich());
+		System.out.println(submarineSandwichBeef.getDescription());
+		System.out.println(submarineSandwichBeef.cost() + "\n");
+
+		// Make a cheese sandwich.
+		Burger cheeseSandwich = new Cheese(new Sandwich());
+		System.out.println(cheeseSandwich.getDescription());
+		System.out.println(cheeseSandwich.cost() + "\n");
+
+		// Make a lettuce chicken whopper.
+		Burger lettuceChickenWhopper = new Lettuce(new Chicken(new WhopperBurger()));
+		System.out.println(lettuceChickenWhopper.getDescription());
+		System.out.println(lettuceChickenWhopper.cost() + "\n");
+
+		// Make a bacon cheese whopper burger.
+		Burger baconCheeseWhopper = new Bacon(new Cheese(new WhopperBurger()));
+		System.out.println(baconCheeseWhopper.getDescription());
+		System.out.println(baconCheeseWhopper.cost() + "\n");
+	}
 
 }
