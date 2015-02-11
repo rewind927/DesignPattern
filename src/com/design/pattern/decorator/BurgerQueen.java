@@ -10,15 +10,10 @@ public class BurgerQueen {
 
 		// TODO: Make a cheese sandwich.
 
-		// Make a lettuce sandwich.
-		Burger sandwich = new Lettuce(new Sandwich());
-		System.out.println(sandwich.getDescription());
-		System.out.println(sandwich.cost() + "\n");
-
-		// Make a chicken whopper.
-		Burger chickenBurger = new Chicken(new WhopperBurger());
-		System.out.println(chickenBurger.getDescription());
-		System.out.println(chickenBurger.cost() + "\n");
+		// Make a lettuce chicken whopper.
+		Burger lettuceChickenWhopper = new Lettuce(new Chicken(new WhopperBurger()));
+		System.out.println(lettuceChickenWhopper.getDescription());
+		System.out.println(lettuceChickenWhopper.cost() + "\n");
 
 		// TODO: Make a bacon whopper burger.
 
