@@ -38,7 +38,7 @@
 #### Structural
 *  Adapter
 *  Bridge
-*  Composite
+*  [Composite](https://github.com/rewind927/DesignPattern/wiki/Composite)
 *  Decorator
 *  Facade
 *  Flyweight
