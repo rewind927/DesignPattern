@@ -4,7 +4,7 @@ import com.design.pattern.bridge.shape.Shape;
 
 import java.util.List;
 
-public class Client {
+public class BridgeClient {
 
     public static void main(String[] args) {
         List<Shape> myShapes;
