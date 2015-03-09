@@ -3,6 +3,7 @@
 
 # generated files
 bin/
+out/
 
 # IDEA
 *.iml
