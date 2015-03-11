@@ -36,21 +36,21 @@
 *  Singleton
 
 #### Structural
-*  Adapter
-*  Bridge
+*  [Adapter](https://github.com/rewind927/DesignPattern/wiki/Adapter)
+*  [Bridge](https://github.com/rewind927/DesignPattern/wiki/Bridge)
 *  [Composite](https://github.com/rewind927/DesignPattern/wiki/Composite)
-*  Decorator
-*  Facade
+*  [Decorator](https://github.com/rewind927/DesignPattern/wiki/Decorator)
+*  [Facade](https://github.com/rewind927/DesignPattern/wiki/Facade)
 *  Flyweight
 *  Proxy
 
 #### Behavioral
-*  Chain of responsibility
+*  [Chain of responsibility](https://github.com/rewind927/DesignPattern/wiki/Chain-of-Resposibility)
 *  [Command](https://github.com/rewind927/DesignPattern/wiki/Command)
 *  Interpreter
 *  Iterator
 *  Mediator
-*  Memento
+*  [Memento](https://github.com/rewind927/DesignPattern/wiki/Memento)
 *  State
 *  [Observer](https://github.com/rewind927/DesignPattern/wiki/Observer)
 *  [Strategy](https://github.com/rewind927/DesignPattern/wiki/Strategy)
@@ -59,3 +59,4 @@
 
 ### Reference:
 1. [Head First Design Patterns](http://www.headfirstlabs.com/books/hfdp/)
+2. [iluwatar java-design-patterns](https://github.com/iluwatar/java-design-patterns)
