@@ -31,9 +31,9 @@
 #### Creational
 *  Abstract Factory
 *  Builder
-*  Factory Method
+*  [Factory Method](https://github.com/rewind927/DesignPattern/wiki/FactoryMethod)
 *  Prototype
-*  Singleton
+*  [Singleton](https://github.com/rewind927/DesignPattern/wiki/Singleton)
 
 #### Structural
 *  [Adapter](https://github.com/rewind927/DesignPattern/wiki/Adapter)
