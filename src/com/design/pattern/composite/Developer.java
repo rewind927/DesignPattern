@@ -2,11 +2,11 @@ package com.design.pattern.composite;
 
 public class Developer implements Employee {
     private String name;
-    private int salary;
+    private String title;
 
-    public Developer(String name, int salary) {
+    public Developer(String name, String title) {
         this.name = name;
-        this.salary = salary;
+        this.title = title;
     }
 
     public void add(Employee employee) {
@@ -23,14 +23,12 @@ public class Developer implements Employee {
         return name;
     }
 
-    public int getSalary() {
-        return salary;
+    public String getTitle() {
+        return title;
     }
 
     public void print() {
-        System.out.println("--------------------------");
-        System.out.println("Name  : " + getName());
-        System.out.println("Salary: " + getSalary());
-        System.out.println("--------------------------");
+        System.out.println(CompositeClient.g_indent + "Name : " + getName());
+        System.out.println(CompositeClient.g_indent + "Title: " + getTitle());
     }
 }

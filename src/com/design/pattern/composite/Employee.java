@@ -10,7 +10,7 @@ public interface Employee {
 
     public String getName();
 
-    public int getSalary();
+    public String getTitle();
 
     public void print();
 }
