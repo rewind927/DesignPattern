@@ -1,6 +1,6 @@
 package com.design.pattern.factorymethod;
 
-public class TxtFactory implements DocumentFactory {
+public class TxtFactory extends DocumentFactory {
 
     @Override
     public Document create() {

@@ -1,5 +1,5 @@
 package com.design.pattern.factorymethod;
 
-public interface DocumentFactory {
-    Document create();
+public abstract class DocumentFactory {
+    public abstract Document create();
 }

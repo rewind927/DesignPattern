@@ -1,6 +1,6 @@
 package com.design.pattern.factorymethod;
 
-public class PdfFactory implements DocumentFactory {
+public class PdfFactory extends DocumentFactory {
 
     @Override
     public Document create() {
