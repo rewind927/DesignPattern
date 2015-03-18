@@ -2,11 +2,8 @@ package com.design.pattern.factorymethod;
 
 public class FactoryClient {
     public static void main(String args[]) {
-        DocumentFactory txtFactory = new TxtFactory();
-        Document document = txtFactory.create();
-
-//        DocumentFactory pdfFactory = new PdfFactory();
-//        Document document = pdfFactory.create();
+        DocumentFactory documentFactory = new TxtFactory();
+        Document document = documentFactory.create();
 
         document.open();
         document.close();
