@@ -48,14 +48,14 @@
 *  [Chain of responsibility](https://github.com/rewind927/DesignPattern/wiki/Chain-of-Resposibility)
 *  [Command](https://github.com/rewind927/DesignPattern/wiki/Command)
 *  Interpreter
-*  Iterator
+*  [Iterator](https://github.com/rewind927/DesignPattern/wiki/Iterator)
 *  Mediator
 *  [Memento](https://github.com/rewind927/DesignPattern/wiki/Memento)
 *  State
 *  [Observer](https://github.com/rewind927/DesignPattern/wiki/Observer)
 *  [Strategy](https://github.com/rewind927/DesignPattern/wiki/Strategy)
 *  [Template method](https://github.com/rewind927/DesignPattern/wiki/Template-method)
-*  Visitor
+*  [Visitor](https://github.com/rewind927/DesignPattern/wiki/Visitor)
 
 ### Reference:
 1. [Head First Design Patterns](http://www.headfirstlabs.com/books/hfdp/)
