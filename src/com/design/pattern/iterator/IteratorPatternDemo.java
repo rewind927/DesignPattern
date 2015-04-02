@@ -1,11 +1,13 @@
 package com.design.pattern.iterator;
 
-public class IteratorPatternMain {
+public class IteratorPatternDemo {
 
     public static void main(String[] args) {
         NameRepository namesRepository = new NameRepository();
 
-        for(Iterator iterator = namesRepository.getIterator(); iterator.hasNext();){
+        Iterator iterator = namesRepository.getIterator();
+
+        while (iterator.hasNext()) {
             String name = (String)iterator.next();
             System.out.println("Name : " + name);
         }

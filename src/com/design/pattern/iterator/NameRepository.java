@@ -1,7 +1,9 @@
 package com.design.pattern.iterator;
 
+import java.util.ArrayList;
+
 public class NameRepository implements Container {
-    public String names[] = {"Wendy", "Ethan", "Karen", "Jason"};
+    public String names[] = {"Ethan", "Jason", "Karen", "Ascii"};
 
     @Override
     public Iterator getIterator() {
@@ -14,7 +16,6 @@ public class NameRepository implements Container {
 
         @Override
         public boolean hasNext() {
-
             if(index < names.length){
                 return true;
             }
@@ -23,8 +24,7 @@ public class NameRepository implements Container {
 
         @Override
         public Object next() {
-
-            if(this.hasNext()){
+            if(hasNext()){
                 return names[index++];
             }
             return null;
