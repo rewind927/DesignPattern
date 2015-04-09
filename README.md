@@ -29,7 +29,7 @@
 ### Pattern List:
 
 #### Creational
-*  Abstract Factory
+*  [Abstract Factory](https://github.com/rewind927/DesignPattern/wiki/AbstractFactory)
 *  Builder
 *  [Factory Method](https://github.com/rewind927/DesignPattern/wiki/FactoryMethod)
 *  Prototype
@@ -41,7 +41,7 @@
 *  [Composite](https://github.com/rewind927/DesignPattern/wiki/Composite)
 *  [Decorator](https://github.com/rewind927/DesignPattern/wiki/Decorator)
 *  [Facade](https://github.com/rewind927/DesignPattern/wiki/Facade)
-*  Flyweight
+*  [Flyweight](https://github.com/rewind927/DesignPattern/wiki/Flyweight)
 *  Proxy
 
 #### Behavioral
