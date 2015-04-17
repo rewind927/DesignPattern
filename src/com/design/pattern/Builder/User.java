@@ -1,7 +1,7 @@
-package com.design.pattern.Builder;
+package com.design.pattern.builder;
 
 public class User {
-    public final String firstName;    //required
+    private final String firstName;    //required
     private final String lastName;    //required
     private final int age;    //optional
     private final String phone;    //optional

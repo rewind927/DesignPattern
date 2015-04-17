@@ -1,4 +1,4 @@
-package com.design.pattern.Builder;
+package com.design.pattern.builder;
 
 public class UserJavaBeans {
     private String firstName; // required
