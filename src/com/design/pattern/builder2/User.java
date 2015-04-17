@@ -7,7 +7,14 @@ public class User {
     private final String phone; // optional
     private final String address; // optional
 
-   //TODO User Constructor
+	//TODO Refactor User constructor
+	public User () {
+		this.firstName = "";
+		this.lastName = "";
+		this.age = 0;
+		this.phone = "";
+		this.address = "";
+	}
 
     public String getFirstName() {
         return firstName;
@@ -43,18 +50,22 @@ public class User {
 
         public UserBuilder age(int age) {
            //TODO
+	        return null;
         }
 
         public UserBuilder phone(String phone) {
             //TODO
+	        return null;
         }
 
         public UserBuilder address(String address) {
             //TODO
+	        return null;
         }
 
         public User build() {
            //TODO
+	        return null;
         }
     }
 }

@@ -7,6 +7,7 @@ public class Waiter {
 
 	public Pizza getPizza() {
 		//TODO getPizza
+		return null;
 	}
 
 	public void buildPizza() {
